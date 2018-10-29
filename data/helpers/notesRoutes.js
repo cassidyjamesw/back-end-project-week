@@ -36,7 +36,7 @@ router.post("/", (req, res) => {
   const note = req.body;
 
   notes
-    .addNote(note)
+    .add(note)
     .then(ids => {
       res.status(201).json(ids[0]);
     })
