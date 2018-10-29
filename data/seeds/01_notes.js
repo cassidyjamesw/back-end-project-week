@@ -7,17 +7,17 @@ exports.seed = function(knex, Promise) {
       return knex("notes").insert([
         {
           title: "Note One",
-          content: "This is Note One",
-          tag: "sample tag"
+          textBody: "This is Note One",
+          tags: "sample tag"
         },
         {
           title: "Note Two",
-          content: "This is Note Two",
-          tag: "sample tag two"
+          textBody: "This is Note Two",
+          tags: "sample tag two"
         },
         {
           title: "Note Three",
-          content: "This is Note Three"
+          textBody: "This is Note Three"
         }
       ]);
     });

@@ -3,11 +3,11 @@ exports.up = function(knex, Promise) {
     tbl.increments();
     tbl.string("title", 128).notNullable();
     tbl.unique("title");
-    tbl.string("content", 128).notNullable();
-    tbl.boolean("tag").defaultTo(false);
+    tbl.string("textBody", 128).notNullable();
+    tbl.string("tags");
   });
 };
 
 exports.down = function(knex, Promise) {
-  return knex.schema.dropTableIfExists("projects");
+  return knex.schema.dropTableIfExists("notes");
 };
