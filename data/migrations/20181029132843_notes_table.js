@@ -4,7 +4,7 @@ exports.up = function(knex, Promise) {
     tbl.string("title", 128).notNullable();
     tbl.unique("title");
     tbl.string("textBody", 128).notNullable();
-    tbl.string("tags");
+    tbl.string("tags", 128);
   });
 };
 
