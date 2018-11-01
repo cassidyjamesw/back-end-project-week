@@ -1,9 +1,9 @@
+require("dotenv").config(); // loads .env configuration
+
 const express = require("express");
 const helmet = require("helmet");
 const server = express();
 var cors = require("cors");
-
-require("dotenv").config(); // loads .env configuration
 
 //import routes
 const notesRoutes = require("./data/helpers/notesRoutes");
