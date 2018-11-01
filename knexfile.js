@@ -1,4 +1,5 @@
 require("dotenv").config();
+
 const localPg = {
   host: "localhost",
   database: "lambda",
