@@ -3,6 +3,8 @@ const helmet = require("helmet");
 const server = express();
 var cors = require("cors");
 
+require("dotenv").config(); // loads .env configuration
+
 //import routes
 const notesRoutes = require("./data/helpers/notesRoutes");
 
@@ -18,4 +20,6 @@ server.get("/", (req, res) => {
 //Routes
 server.use("/api/notes", notesRoutes);
 
-server.listen(9000, () => console.log("\nAPI running on port 9000\n"));
+const port = process.env.PORT || 9000;
+
+server.listen(port, () => console.log("\nAPI running on port \n", port));
