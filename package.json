@@ -4,7 +4,8 @@
   "main": "index.js",
   "scripts": {
     "test": "jest --watch --verbose",
-    "start": "nodemon index.js"
+    "start": "node ./bin/www",
+    "server": "nodemon index.js"
   },
   "repository": "https://github.com/cassidyjamesw/back-end-project-week.git",
   "author": "James Cassidy <cassidyjamesw@gmail.com>",
