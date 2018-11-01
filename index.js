@@ -3,6 +3,7 @@ require("dotenv").config(); // loads .env configuration
 const express = require("express");
 const helmet = require("helmet");
 const server = express();
+const knex = require("./data/config.js");
 var cors = require("cors");
 
 //import routes
